@@ -25,8 +25,9 @@ COLORS=($GREEN $LIGHTGREEN)
 TERMINAL_LINES=$(expr `tput lines` - 1)
 TERMINAL_COLUMNS=`tput cols`
 
-CHARS=(A B C D E F G H I J K L M N O P R S T U Q V X Y Z a b c d e f g h i j k l m n o p r s tu q w x y z { } [ ] )
-#CHARS=(ｱ ｲ ｳ ｴ ｵ ｶ ｷ ｸ ｹ ｺ ｻ ｼ ｽ ｾ ｿ ﾀ ﾁ ﾂ ﾃ ﾄ ﾅ ﾆ ﾇ ﾈ ﾉ ﾊ ﾋ ﾌ ﾍ ﾎ ﾏ ﾐ ﾑ ﾒ ﾓ ﾔ ﾕ ﾖ ﾗ ﾘ ﾙ ﾚ ﾛ ﾜ ﾝ)
+# I couldn`t get japanese letters working in shell, they are fine in bash, so just uncomment the set you need.
+#CHARS=(A B C D E F G H I J K L M N O P R S T U Q V X Y Z a b c d e f g h i j k l m n o p r s tu q w x y z { } [ ] )
+CHARS=(ｱ ｲ ｳ ｴ ｵ ｶ ｷ ｸ ｹ ｺ ｻ ｼ ｽ ｾ ｿ ﾀ ﾁ ﾂ ﾃ ﾄ ﾅ ﾆ ﾇ ﾈ ﾉ ﾊ ﾋ ﾌ ﾍ ﾎ ﾏ ﾐ ﾑ ﾒ ﾓ ﾔ ﾕ ﾖ ﾗ ﾘ ﾙ ﾚ ﾛ ﾜ ﾝ)
 
 CHARS_AMOUNT=${#CHARS[@]}
 COLORS_AMOUNT=${#COLORS[@]}
